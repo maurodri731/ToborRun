@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.lootlocker.lootlockersdk": {
+      "version": "https://github.com/LootLocker/unity-sdk.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "74e4fb2dc9d27be5d1ad70247ab20feec9bc14d8"
+    },
     "com.unity.cinemachine": {
       "version": "2.10.1",
       "depth": 0,
