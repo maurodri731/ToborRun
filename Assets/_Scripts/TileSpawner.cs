@@ -96,7 +96,7 @@ public class TileSpawner : MonoBehaviour
     }
 
     private void SpawnObstacle() {
-        if (Random.value > 0.2f) return;//there is an 20% change of there being an obstacle at any eligible tile
+        if (Random.value > 0.4f) return;//there is an 40% change of there being an obstacle at any eligible tile
             
         GameObject obstaclePrefab = SelectRandomGameObjectFromList(obstacles);//select random tile, rotate it according to current direction
         Quaternion newObjectRotation = obstaclePrefab.gameObject.transform.rotation * Quaternion.LookRotation(currentTileDirection, Vector3.up);
