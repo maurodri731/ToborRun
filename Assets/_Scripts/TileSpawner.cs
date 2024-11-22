@@ -34,7 +34,7 @@ public class TileSpawner : MonoBehaviour
 
         //note that the first line of tiles spawned DO NOT contain obstacles!!!
         for (int i = 0; i < tilesStartCount; i++){//control the initial tiles' spawn
-            SpawnTile(startingTile.GetComponent<Tile>(), true);//spawn tiles without spawning obstacles
+            SpawnTile(startingTile.GetComponent<Tile>(), (i == 0) ? false : true);//spawn tiles without spawning obstacles
         }
 
         SpawnTile(SelectRandomGameObjectFromList(turnTiles).GetComponent<Tile>());//spawn the initial turn, ONLY the turn is spawned, not the turn and a line
