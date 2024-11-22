@@ -7,7 +7,7 @@ public class TileSpawner : MonoBehaviour
 {
     //The following is basic variable declaration, to improve code readability wherever they are applied
     [SerializeField]
-    private int tilseStartCount = 10;
+    private int tilesStartCount = 4;
     [SerializeField]
     private int minimumStraightTiles = 3;
     [SerializeField]
@@ -33,8 +33,8 @@ public class TileSpawner : MonoBehaviour
         Random.InitState(System.DateTime.Now.Millisecond);
 
         //note that the first line of tiles spawned DO NOT contain obstacles!!!
-        for (int i = 0; i < tilseStartCount; i++){//control the initial tiles' spawn
-            SpawnTile(startingTile.GetComponent<Tile>());//spawn tiles without spawning obstacles
+        for (int i = 0; i < tilesStartCount; i++){//control the initial tiles' spawn
+            SpawnTile(startingTile.GetComponent<Tile>(), true);//spawn tiles without spawning obstacles
         }
 
         SpawnTile(SelectRandomGameObjectFromList(turnTiles).GetComponent<Tile>());//spawn the initial turn, ONLY the turn is spawned, not the turn and a line
