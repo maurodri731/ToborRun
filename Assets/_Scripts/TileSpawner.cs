@@ -101,6 +101,9 @@ public class TileSpawner : MonoBehaviour
         GameObject obstaclePrefab = SelectRandomGameObjectFromList(obstacles);//select random tile, rotate it according to current direction
         Quaternion newObjectRotation = obstaclePrefab.gameObject.transform.rotation * Quaternion.LookRotation(currentTileDirection, Vector3.up);
         GameObject obstacle = Instantiate(obstaclePrefab, currentTileLocation, newObjectRotation);//spawn and add to the list
+        Vector3 newPosition = obstacle.transform.position;
+        newPosition.y += 0.5f;
+        obstacle.transform.position = newPosition;
         currentObstacles.Add(obstacle);
     }
 
