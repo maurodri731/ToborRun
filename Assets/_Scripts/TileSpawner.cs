@@ -102,8 +102,14 @@ public class TileSpawner : MonoBehaviour
         Quaternion newObjectRotation = obstaclePrefab.gameObject.transform.rotation * Quaternion.LookRotation(currentTileDirection, Vector3.up);
         GameObject obstacle = Instantiate(obstaclePrefab, currentTileLocation, newObjectRotation);//spawn and add to the list
         Vector3 newPosition = obstacle.transform.position;
-        newPosition.y += 0.5f;
-        obstacle.transform.position = newPosition;
+        if(obstacle.name == "Obstacle(Clone)"){
+            newPosition.y += 0.5f;
+            obstacle.transform.position = newPosition;
+        }
+        if(obstacle.name == "SlideObstacle(Clone)"){
+            newPosition.y += 2.5f;
+            obstacle.transform.position = newPosition;
+        }
         currentObstacles.Add(obstacle);
     }
 

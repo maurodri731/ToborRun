@@ -536,7 +536,7 @@ MonoBehaviour:
   - {fileID: 5635246150992067340, guid: 406d087854fa4cf4ba1b09b5571e98e9, type: 3}
   obstacles:
   - {fileID: 8029005515629080273, guid: 00a9496df36641146b31aea3ca1f2374, type: 3}
-  - {fileID: 7602181854675208719, guid: 155f450bb33de2c4f96d377dba80b194, type: 3}
+  - {fileID: 8029005515629080273, guid: 57a3eef44655d0d40af09e8f5a398dbf, type: 3}
 --- !u!4 &859469600
 Transform:
   m_ObjectHideFlags: 0
