@@ -382,8 +382,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.99999994, y: 2.7957506, z: 6.4436326}
-  m_Center: {x: -0.0000030835815, y: 5.917267, z: 4.1143527}
+  m_Size: {x: 0.9999999, y: 2.5985484, z: 4.734493}
+  m_Center: {x: -0.0000030764331, y: 5.8186913, z: 4.279899}
 --- !u!1 &445771436
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,8 +448,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445771436}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15166785, y: -0.000000013641943, z: 0.0000000020932596, w: 0.9884316}
-  m_LocalPosition: {x: -0.15, y: 5, z: -7}
+  m_LocalRotation: {x: 0.15173475, y: -7.4803274e-31, z: -4.154439e-32, w: 0.98842126}
+  m_LocalPosition: {x: -0.15, y: 4.62, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -594,6 +594,27 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &828504221
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828504212}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23f6b15011a86a7429c083954de01080, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &859469598
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,8 +891,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15166786, y: -0.000000013641943, z: 0.0000000020932602, w: 0.9884315}
-  m_LocalPosition: {x: -0.15, y: 5, z: -7}
+  m_LocalRotation: {x: 0.15173475, y: -7.7261774e-31, z: 1.1860629e-31, w: 0.98842126}
+  m_LocalPosition: {x: -0.15, y: 4.62, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1112,7 +1133,6 @@ GameObject:
   - component: {fileID: 1413956533}
   - component: {fileID: 1413956532}
   - component: {fileID: 1413956535}
-  - component: {fileID: 1413956536}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1135,7 +1155,7 @@ MonoBehaviour:
   initalPlayerSpeed: 6
   maximumPlayerSpeed: 30
   playerSpeedIncreaseRate: 0.1
-  jumpHeight: 1
+  jumpHeight: 1.2
   initalGravityValue: -9.81
   groundLayer:
     serializedVersion: 2
@@ -1146,8 +1166,8 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
-  animator: {fileID: 1413956536}
-  slideAnimationClip: {fileID: 7400000, guid: 5ff767ef47855411c9050b7cd21e5359, type: 2}
+  animator: {fileID: 828504221}
+  slideAnimationClip: {fileID: 7400000, guid: 2fec81db08de84e40ba7dc8677e5516e, type: 2}
   playerSpeed: 1
   scoreMultiplier: 10
   turnEvent:
@@ -1234,7 +1254,7 @@ Transform:
   m_GameObject: {fileID: 1413956531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 1.5, z: 0}
+  m_LocalPosition: {x: -0.15, y: 1.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1267,27 +1287,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &1413956536
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413956531}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 23f6b15011a86a7429c083954de01080, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1515915997
 GameObject:
   m_ObjectHideFlags: 3
@@ -1843,11 +1842,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02088652c0ae64f1ca8d35c5f898da81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02088652c0ae64f1ca8d35c5f898da81, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.6144264
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 02088652c0ae64f1ca8d35c5f898da81, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1894,6 +1893,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 02088652c0ae64f1ca8d35c5f898da81, type: 3}
       insertIndex: -1
       addedObject: {fileID: 828504220}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 02088652c0ae64f1ca8d35c5f898da81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 828504221}
   m_SourcePrefab: {fileID: 100100000, guid: 02088652c0ae64f1ca8d35c5f898da81, type: 3}
 --- !u!1 &1856587669
 GameObject:
