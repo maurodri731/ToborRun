@@ -115,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7778802099400804072}
   m_Layer: 8
-  m_Name: Obstacle
+  m_Name: SlideObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
